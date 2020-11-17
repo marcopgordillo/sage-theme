@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/app/themes/sage-theme",
-  "devUrl": "http://sage-theme.test",
+  "devUrl": "http://miweb.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
