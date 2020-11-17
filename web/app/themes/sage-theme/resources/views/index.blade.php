@@ -19,4 +19,6 @@
   @endwhile
 
   {!! get_the_posts_navigation() !!}
+
+  @include('partials.modal-wrapper')
 @endsection

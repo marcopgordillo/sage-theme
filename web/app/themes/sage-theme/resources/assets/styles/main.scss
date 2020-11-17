@@ -2,6 +2,8 @@
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
  */
+@import "functions/*";
+
 @tailwind base;
 
 /** Import variables */
@@ -28,6 +30,7 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/modal";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

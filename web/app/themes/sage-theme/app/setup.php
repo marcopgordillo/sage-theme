@@ -129,4 +129,10 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+
+    /**
+     * Alias of modal component
+     */
+    sage('blade')->compiler()->component('components.modal', 'modal');
+    sage('blade')->compiler()->component('components.alert', 'alert');
 });
