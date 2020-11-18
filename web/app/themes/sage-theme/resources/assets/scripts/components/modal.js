@@ -5,12 +5,12 @@ export default class Modal {
 
         element.addEventListener('click', event => {
             event.preventDefault()
-            this.openDialog(this.dialog)
+            this.openDialog()
         })
 
         this.closeButtons.forEach(button => {
             button.addEventListener('click', () => {
-                this.closeDialog(this.dialog)
+                this.closeDialog()
             })
         })
     }

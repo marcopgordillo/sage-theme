@@ -20,5 +20,9 @@
 
   {!! get_the_posts_navigation() !!}
 
+  @alert(['type' => 'success'])
+    Hello alert
+  @endalert
+
   @include('partials.modal-wrapper')
 @endsection

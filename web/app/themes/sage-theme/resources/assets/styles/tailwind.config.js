@@ -13,7 +13,7 @@
  * This plugin modifies Tailwind’s base styles using values from the theme.
  * https://tailwindcss.com/docs/adding-base-styles#using-a-plugin
  */
-const globalStyles = ({ addBase, config }) => {
+const globalStyles = ({ addBase, addUtilities, config }) => {
   addBase({
     body: {
       backgroundColor: '#eee',
@@ -44,6 +44,21 @@ const globalStyles = ({ addBase, config }) => {
     ol: { listStyleType: 'decimal' },
     ul: { listStyleType: 'disc' },
   });
+
+  addUtilities({
+    '.text-shadow': {
+      textShadow: '0 2px 4px rgba(0,0,0,0.10)',
+    },
+    '.text-shadow-md': {
+      textShadow: '0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08)',
+    },
+    '.text-shadow-lg': {
+      textShadow: '0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08)',
+    },
+    '.text-shadow-none': {
+      textShadow: 'none',
+    },
+  }, ['responsive']);
 }
 
 /**

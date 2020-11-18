@@ -1,0 +1,15 @@
+.alert {
+  @apply relative py-3 px-5 pr-16 mb-4 border border-solid border-transparent rounded transition-opacity ease-linear duration-150;
+
+  &-success {
+    @apply bg-green-200 text-green-900 border-green-300;
+  }
+}
+
+.close {
+  @apply py-3 px-5 absolute float-right top-0 right-0 text-2xl font-bold text-opacity-50 text-shadow leading-none bg-transparent z-10 cursor-pointer;
+}
+
+.close:focus {
+  @apply outline-none;
+}
